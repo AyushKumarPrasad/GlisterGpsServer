@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="limited.pvt.global.stachi.glisteradmin.app">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/logosmall"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/logosmall"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".MainActivity"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <service android:name=".Notification.MyFirebaseIdService">
+            <intent-filter>
+                <action android:name="com.google.firebase.INSTANCE_ID_EVENT" />
+            </intent-filter>
+        </service>
+        <service android:name=".Notification.MyFirebaseMessaging">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+
+        <activity
+            android:name=".Home"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".GetAttendance"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".SignIn"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".GetNames"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".GetLocation"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".LocationAddress"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".MapTracking"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".MessageList"
+            android:screenOrientation="portrait" />
+
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
+
+        <activity
+            android:name=".ImagesActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".MeetingDetails"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".MeetingNames"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".MeetingDates"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".LeaveDetails"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".LeaveNames"
+            android:screenOrientation="portrait" />
+        <activity android:name=".BatteryName" />
+        <activity android:name=".BatteryLevelPercent" />
+        <activity android:name=".ProductItems" />
+        <activity android:name=".ProductNames.Name1" />
+        <activity android:name=".ProductNames.Name2" />
+        <activity android:name=".ProductNames.Name3" />
+        <activity android:name=".ProductNames.Name4" />
+        <activity android:name=".ProductNames.Name5" />
+        <activity android:name=".ProductNames.Name6" />
+        <activity android:name=".ProductNames.Name7" />
+        <activity android:name=".ProductNames.Name8" />
+        <activity android:name=".ProductDetails.Details1" />
+        <activity android:name=".ProductDetails.Details2" />
+        <activity android:name=".ProductDetails.Details3" />
+        <activity android:name=".ProductDetails.Details4" />
+        <activity android:name=".ProductDetails.Details5" />
+        <activity android:name=".ProductDetails.Details6" />
+        <activity android:name=".ProductDetails.Details7" />
+        <activity android:name=".ProductDetails.Details8" />
+        <activity android:name=".ProductDates.Dates1" />
+        <activity android:name=".ProfileNames" />
+        <activity android:name=".ProfileDetails"></activity>
+    </application>
+
+</manifest>

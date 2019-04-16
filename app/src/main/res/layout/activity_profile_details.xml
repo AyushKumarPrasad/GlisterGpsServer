@@ -1,0 +1,31 @@
+<RelativeLayout
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="@mipmap/backgroundpage"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ProfileDetails">
+
+    <ProgressBar
+        android:id="@+id/progress_circle_meetingDetails"
+        android:layout_below="@+id/text_view_name_meetingChildrenCountDatabase"
+        android:layout_centerInParent="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recycler_view_meetingDetails"
+        android:layout_below="@+id/text_view_name_meetingChildrenCountDatabase"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+
+
+</RelativeLayout>
+
+
+
+
+
